@@ -22,8 +22,8 @@ import java.io.PrintWriter;
 public class ThumbCreator extends CordovaPlugin {
 
     public static final String TAG = "ThumbCreator";
-    public static int width = 100;
-    public static int height = 100;
+    public static int width = 250;
+    public static int height = 250;
 
     /**
      * Constructor.
