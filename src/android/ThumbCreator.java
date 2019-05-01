@@ -95,7 +95,7 @@ public class ThumbCreator extends CordovaPlugin {
 
                 ThumbData data = new ThumbData();
                 data.setAbsolutePath(targetFile.getAbsolutePath());
-                data.setSuccess(true);
+//                 data.setSuccess(true);
 
                 Gson gson = new Gson();
                 String json = gson.toJson(data);
