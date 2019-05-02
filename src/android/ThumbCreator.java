@@ -75,8 +75,7 @@ public class ThumbCreator extends CordovaPlugin {
             }
 
             Bitmap bitmap = BitmapFactory.decodeFile(fromFile.getAbsolutePath());
-            if(bitmap !== null){
-                 Bitmap thumb = ThumbnailUtils.extractThumbnail(bitmap, ThumbCreator.width, ThumbCreator.height);
+              Bitmap thumb = ThumbnailUtils.extractThumbnail(bitmap, ThumbCreator.width, ThumbCreator.height);
 
             OutputStream fOut = null;
             if(!toDir.exists()) {
@@ -105,7 +104,6 @@ public class ThumbCreator extends CordovaPlugin {
             }
             callback.error("An errror occured.");
             return false;
-            }
         } catch (Exception e) {
             StringWriter sw = new StringWriter();
             PrintWriter pw = new PrintWriter(sw);
